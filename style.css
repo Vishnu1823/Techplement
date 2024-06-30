@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.forecast {
+
+    font-size: 0.9em;
+}
+
+span {
+    font-size: 1em;
+}
+
+li:hover {
+    background-color: rgb(131, 219, 237);
+    text-decoration: underline;
+}
+
+.button {
+    position: relative;
+    background-color: rgb(90, 134, 221);
+    border: none;
+    font-size: medium;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
